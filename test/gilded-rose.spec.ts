@@ -91,4 +91,18 @@ describe('Gilded Rose', function () {
         expect(items[0].sellIn).to.equal(7);
     });
 
+    it("normal item loses quality", function () {
+        const gildedRose = new GildedRose([
+            new Item("cheese", 2, 25) ]);
+        const items = gildedRose.updateQuality();
+        expect(items[0].quality).to.equal(24);
+    });
+
+    it("normal item loses quality faster when expired", function () {
+        const gildedRose = new GildedRose([
+            new Item("cheese", -1, 25) ]);
+        const items = gildedRose.updateQuality();
+        expect(items[0].quality).to.equal(23);
+    });
+
 });
