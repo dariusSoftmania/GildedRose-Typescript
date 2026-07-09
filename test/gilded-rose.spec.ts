@@ -77,4 +77,18 @@ describe('Gilded Rose', function () {
         expect(items[0].quality).to.equal(0);
     });
 
+    it("Sulfuras, Hand of Ragnaros keeps quality", function () {
+        const gildedRose = new GildedRose([
+            new Item("Sulfuras, Hand of Ragnaros", 7, 80) ]);
+        const items = gildedRose.updateQuality();
+        expect(items[0].quality).to.equal(80);
+    });
+
+    it("Sulfuras, Hand of Ragnaros does not expire", function () {
+        const gildedRose = new GildedRose([
+            new Item("Sulfuras, Hand of Ragnaros", 7, 80) ]);
+        const items = gildedRose.updateQuality();
+        expect(items[0].sellIn).to.equal(7);
+    });
+
 });
