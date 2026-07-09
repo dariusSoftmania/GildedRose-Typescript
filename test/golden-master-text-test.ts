@@ -305,7 +305,7 @@ describe("Golden Master Test", function () {
         it('check "Conjured Mana Cake"', function () {
             expect(glidedRose.items[5].name).to.equal("Conjured Mana Cake");
             expect(glidedRose.items[5].sellIn).to.equal(0);
-            expect(glidedRose.items[5].quality).to.equal(11);
+            expect(glidedRose.items[5].quality).to.equal(13);
         });
 
         it('check "Date passed"', function () {
@@ -348,7 +348,7 @@ describe("Golden Master Test", function () {
         it('check "Conjured Mana Cake"', function () {
             expect(glidedRose.items[5].name).to.equal("Conjured Mana Cake");
             expect(glidedRose.items[5].sellIn).to.equal(-1);
-            expect(glidedRose.items[5].quality).to.equal(7);
+            expect(glidedRose.items[5].quality).to.equal(9);
         });
     });
 
@@ -379,7 +379,7 @@ describe("Golden Master Test", function () {
         it('check "Conjured Mana Cake"', function () {
             expect(glidedRose.items[5].name).to.equal("Conjured Mana Cake");
             expect(glidedRose.items[5].sellIn).to.equal(-2);
-            expect(glidedRose.items[5].quality).to.equal(3);
+            expect(glidedRose.items[5].quality).to.equal(5);
         });
     });
 
@@ -404,7 +404,7 @@ describe("Golden Master Test", function () {
         it('check "Conjured Mana Cake"', function () {
             expect(glidedRose.items[5].name).to.equal("Conjured Mana Cake");
             expect(glidedRose.items[5].sellIn).to.equal(-3);
-            expect(glidedRose.items[5].quality).to.equal(0);
+            expect(glidedRose.items[5].quality).to.equal(1);
         });
     });
 

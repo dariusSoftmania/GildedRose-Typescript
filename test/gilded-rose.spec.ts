@@ -105,4 +105,11 @@ describe('Gilded Rose', function () {
         expect(items[0].quality).to.equal(23);
     });
 
+    // it("test item with quality over 50", function () {
+    //     const gildedRose = new GildedRose([
+    //         new Item("cheese", 4, 70) ]);
+    //     const items = gildedRose.updateQuality();
+    //     expect(items[0].quality).to.equal(69);
+    // });
+
 });
